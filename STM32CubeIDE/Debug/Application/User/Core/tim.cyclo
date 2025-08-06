@@ -1,0 +1,3 @@
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/tim.c:30:6:MX_TIM2_Init	4
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/tim.c:70:6:HAL_TIM_Base_MspInit	2
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/tim.c:90:6:HAL_TIM_Base_MspDeInit	2

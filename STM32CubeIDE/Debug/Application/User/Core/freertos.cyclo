@@ -1,0 +1,6 @@
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/freertos.c:138:6:MX_FREERTOS_Init	2
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/freertos.c:199:6:StartTimeTask	1
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/freertos.c:231:6:StartAlarmTask	7
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/freertos.c:269:6:StartIRTask	54
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/freertos.c:446:6:StartUIStateTask	7
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/freertos.c:509:6:StartLCDTask	2

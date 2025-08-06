@@ -1,0 +1,4 @@
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/rtc.c:31:6:MX_RTC_Init	5
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/rtc.c:108:6:HAL_RTC_MspInit	3
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/rtc.c:139:6:HAL_RTC_MspDeInit	2
+C:/Users/KCCISTC/Documents/CubeMX/MiniProject/Core/Src/rtc.c:159:6:Parse_CompileTime_And_Set_RTC	3

@@ -1,0 +1,2 @@
+../Application/User/Core/ir_decode.c:4:6:check_ir	9
+../Application/User/Core/ir_decode.c:34:6:reset_ir_state	1

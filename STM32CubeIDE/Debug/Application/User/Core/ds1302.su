@@ -1,0 +1,5 @@
+../Application/User/Core/ds1302.c:16:16:dec_to_bcd	16	static
+../Application/User/Core/ds1302.c:21:6:ds1302_set_pin_output	32	static
+../Application/User/Core/ds1302.c:29:6:ds1302_set_pin_input	32	static
+../Application/User/Core/ds1302.c:38:13:ds1302_write_byte	24	static
+../Application/User/Core/ds1302.c:49:6:DS1302_SetTime	16	static

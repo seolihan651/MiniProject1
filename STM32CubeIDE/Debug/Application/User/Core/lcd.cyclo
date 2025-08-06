@@ -1,0 +1,8 @@
+../Application/User/Core/lcd.c:15:13:LCD_Delay	1
+../Application/User/Core/lcd.c:19:6:LCD_Init	1
+../Application/User/Core/lcd.c:30:6:LCD_SetCursor	2
+../Application/User/Core/lcd.c:35:6:LCD_Print	2
+../Application/User/Core/lcd.c:41:6:LCD_Clear	1
+../Application/User/Core/lcd.c:46:13:LCD_Send_Cmd	1
+../Application/User/Core/lcd.c:51:13:LCD_Send_Data	1
+../Application/User/Core/lcd.c:56:13:LCD_Send	1

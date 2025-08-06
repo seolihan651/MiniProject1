@@ -1,0 +1,5 @@
+../Application/User/Core/ds1302.c:16:16:dec_to_bcd	1
+../Application/User/Core/ds1302.c:21:6:ds1302_set_pin_output	1
+../Application/User/Core/ds1302.c:29:6:ds1302_set_pin_input	1
+../Application/User/Core/ds1302.c:38:13:ds1302_write_byte	3
+../Application/User/Core/ds1302.c:49:6:DS1302_SetTime	1
