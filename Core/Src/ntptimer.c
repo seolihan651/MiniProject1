@@ -1,6 +1,8 @@
 /* ntptimer.c */
 #include "ntptimer.h"
 
+#include "cmsis_os2.h"
+
 /* Private includes ----------------------------------------------------------*/
 
 /* Private typedef -----------------------------------------------------------*/
@@ -10,7 +12,7 @@
 #define WIFI_PASSWORD "kcci098#"
 #define NTP_IP "27.96.158.81"
 #define NTP_PORT "123"
-#define NTP_DEBUG_MODE 0
+#define NTP_DEBUG_MODE 1
 
 /* Private macro -------------------------------------------------------------*/
 
@@ -67,24 +69,23 @@ static void NTP_ESP_ClearResponseBuffer(void);
  * @param  huart_debug: 디버그 출력용 UART 핸들
  * @retval None
  */
-void NTP_Timer_Init(UART_HandleTypeDef *huart_esp, UART_HandleTypeDef *huart_debug) {
+void NTP_Timer_Init(UART_HandleTypeDef *huart_esp,
+                    UART_HandleTypeDef *huart_debug) {
     huart_esp_module = huart_esp;
     huart_debug_module = huart_debug;
-    
+
     // 링 버퍼 초기화
     NTP_RingBuffer_Init(&esp_to_system_buffer);
     NTP_RingBuffer_Init(&system_to_esp_buffer);
-    
+
     // 뮤텍스 생성
-    const osMutexAttr_t ntp_mutex_attr = {
-        .name = "NTP_Mutex"
-    };
+    const osMutexAttr_t ntp_mutex_attr = {.name = "NTP_Mutex"};
     NTP_MutexHandle = osMutexNew(&ntp_mutex_attr);
-    
+
     // UART 수신 인터럽트 시작
     HAL_UART_Receive_IT(huart_esp_module, &uart_esp_rx_data, 1);
     HAL_UART_Receive_IT(huart_debug_module, &uart_debug_rx_data, 1);
-    
+
     // 초기화 메시지
     NTP_Debug_Print("NTP Timer initialized\r\n");
 }
@@ -95,13 +96,13 @@ void NTP_Timer_Init(UART_HandleTypeDef *huart_esp, UART_HandleTypeDef *huart_deb
  * @retval None
  */
 void NTP_Timer_Task(void const *argument) {
-    for(;;) {
+    for (;;) {
         // ESP 응답 처리
         NTP_ESP_ProcessResponse();
-        
+
         // WiFi 상태 머신 실행
         NTP_WiFi_StateMachine();
-        
+
         // 100ms 대기
         osDelay(100);
     }
@@ -143,13 +144,15 @@ void NTP_GetCurrentTime(NTP_TimeData_t *time_data) {
 void NTP_PrintTime(void) {
     NTP_TimeData_t time_data;
     NTP_GetCurrentTime(&time_data);
-    
+
     if (time_data.valid) {
         char time_msg[100];
-        sprintf(time_msg, "Current Time (KST): 20%02d-%02d-%02d %02d:%02d:%02d\r\n", 
+        sprintf(time_msg,
+                "Current Time (KST): 20%02d-%02d-%02d %02d:%02d:%02d\r\n",
                 time_data.years, time_data.months, time_data.days,
                 time_data.hours, time_data.minutes, time_data.seconds);
-        HAL_UART_Transmit(huart_debug_module, (uint8_t *)time_msg, strlen(time_msg), 100);
+        HAL_UART_Transmit(huart_debug_module, (uint8_t *)time_msg,
+                          strlen(time_msg), 100);
     } else {
         NTP_Debug_Print("Time not synchronized yet\r\n");
     }
@@ -179,7 +182,7 @@ static void NTP_RingBuffer_Init(NTP_RingBuffer_t *rb) {
 static int NTP_RingBuffer_Put(NTP_RingBuffer_t *rb, uint8_t data) {
     uint16_t next_head = (rb->head + 1) % 256;
     if (next_head == rb->tail) {
-        return -1; // 버퍼 가득참
+        return -1;  // 버퍼 가득참
     }
     rb->buffer[rb->head] = data;
     rb->head = next_head;
@@ -191,7 +194,7 @@ static int NTP_RingBuffer_Put(NTP_RingBuffer_t *rb, uint8_t data) {
  */
 static int NTP_RingBuffer_Get(NTP_RingBuffer_t *rb, uint8_t *data) {
     if (rb->head == rb->tail) {
-        return -1; // 버퍼 비어있음
+        return -1;  // 버퍼 비어있음
     }
     *data = rb->buffer[rb->tail];
     rb->tail = (rb->tail + 1) % 256;
@@ -205,12 +208,15 @@ static void NTP_ESP_SendString(const char *str) {
 #if NTP_DEBUG_MODE
     char tx_buf[128];
     sprintf(tx_buf, ">> %s\r\n", str);
-    HAL_UART_Transmit(huart_debug_module, (uint8_t *)tx_buf, strlen(tx_buf), 100);
+    HAL_UART_Transmit(huart_debug_module, (uint8_t *)tx_buf, strlen(tx_buf),
+                      100);
 #endif
 
     char cmd_buf[128];
     sprintf(cmd_buf, "%s\r\n", str);
-    HAL_UART_Transmit(huart_esp_module, (uint8_t *)cmd_buf, strlen(cmd_buf), 100);
+    HAL_UART_Transmit(huart_esp_module, (uint8_t *)cmd_buf, strlen(cmd_buf),
+                      100);
+    osDelay(2000);
 }
 
 /**
@@ -219,7 +225,8 @@ static void NTP_ESP_SendString(const char *str) {
 static void NTP_Debug_Print(const char *msg) {
 #if NTP_DEBUG_MODE
     const char *prefix = "--ntp-debug :: ";
-    HAL_UART_Transmit(huart_debug_module, (uint8_t *)prefix, strlen(prefix), 100);
+    HAL_UART_Transmit(huart_debug_module, (uint8_t *)prefix, strlen(prefix),
+                      100);
     HAL_UART_Transmit(huart_debug_module, (uint8_t *)msg, strlen(msg), 100);
 #endif
 }
@@ -269,7 +276,8 @@ void NTP_ESP_ProcessResponse(void) {
         }
 
         // "+IPD,4,48:" 패턴 감지
-        if (strstr(ntp_esp_response_buffer, "+IPD,4,48:") != NULL && !ipd_detected) {
+        if (strstr(ntp_esp_response_buffer, "+IPD,4,48:") != NULL &&
+            !ipd_detected) {
             ipd_detected = 1;
             ipd_data_count = 0;
             ntp_data_received = 0;
@@ -278,7 +286,8 @@ void NTP_ESP_ProcessResponse(void) {
         // 버퍼가 가득 차면 절반 삭제
         if (ntp_esp_response_index >= sizeof(ntp_esp_response_buffer) - 1) {
             uint16_t half_size = sizeof(ntp_esp_response_buffer) / 2;
-            memmove(ntp_esp_response_buffer, ntp_esp_response_buffer + half_size, half_size);
+            memmove(ntp_esp_response_buffer,
+                    ntp_esp_response_buffer + half_size, half_size);
             ntp_esp_response_index = half_size;
             ntp_esp_response_buffer[ntp_esp_response_index] = '\0';
         }
@@ -312,9 +321,17 @@ void NTP_WiFi_StateMachine(void) {
         last_state = ntp_wifi_state;
     }
 
-    switch(ntp_wifi_state) {
+    switch (ntp_wifi_state) {
         case NTP_WIFI_INIT:
-            if (current_time - ntp_command_timer > NTP_COMMAND_TIMEOUT_MS) {
+            if (NTP_ESP_CheckResponse("OK")) {
+                NTP_Debug_Print("ESP AT command OK\r\n");
+                NTP_ESP_ClearResponseBuffer();
+                NTP_ESP_SendString("AT+CWMODE=1");
+                ntp_wifi_state = NTP_WIFI_IDLE;
+                ntp_command_timer = current_time;
+                ntp_retry_count = 0;
+            } else if (current_time - ntp_command_timer >
+                       NTP_COMMAND_TIMEOUT_MS) {
                 if (ntp_retry_count < NTP_MAX_RETRY) {
                     ntp_retry_count++;
                     NTP_Debug_Print("ESP AT command retry...\r\n");
@@ -326,21 +343,24 @@ void NTP_WiFi_StateMachine(void) {
                     ntp_retry_count = 0;
                     osDelay(5000);
                     NTP_ESP_ClearResponseBuffer();
-                    NTP_ESP_SendString("AT");
                     ntp_command_timer = current_time;
                 }
-            } else if (NTP_ESP_CheckResponse("OK")) {
-                NTP_Debug_Print("ESP AT command OK\r\n");
-                NTP_ESP_ClearResponseBuffer();
-                NTP_ESP_SendString("AT+CWMODE=1");
-                ntp_wifi_state = NTP_WIFI_IDLE;
-                ntp_command_timer = current_time;
-                ntp_retry_count = 0;
             }
             break;
 
         case NTP_WIFI_IDLE:
-            if (current_time - ntp_command_timer > NTP_COMMAND_TIMEOUT_MS) {
+            if (NTP_ESP_CheckResponse("OK")) {
+                NTP_Debug_Print("Station mode set successfully\r\n");
+                NTP_ESP_ClearResponseBuffer();
+                char cmd[128];
+                sprintf(cmd, "AT+CWJAP=\"%s\",\"%s\"", WIFI_SSID,
+                        WIFI_PASSWORD);
+                NTP_ESP_SendString(cmd);
+                ntp_wifi_state = NTP_WIFI_CONNECTING;
+                ntp_command_timer = current_time;
+                NTP_Debug_Print("WiFi connecting...\r\n");
+            } else if (current_time - ntp_command_timer >
+                       NTP_COMMAND_TIMEOUT_MS) {
                 if (ntp_retry_count < NTP_MAX_RETRY) {
                     ntp_retry_count++;
                     NTP_Debug_Print("Station mode retry...\r\n");
@@ -351,46 +371,41 @@ void NTP_WiFi_StateMachine(void) {
                     NTP_Debug_Print("Station mode failed\r\n");
                     ntp_wifi_state = NTP_WIFI_INIT;
                     ntp_retry_count = 0;
+                    osDelay(5000);
                 }
-            } else if (NTP_ESP_CheckResponse("OK")) {
-                NTP_Debug_Print("Station mode set successfully\r\n");
-                NTP_ESP_ClearResponseBuffer();
-                char cmd[128];
-                sprintf(cmd, "AT+CWJAP=\"%s\",\"%s\"", WIFI_SSID, WIFI_PASSWORD);
-                NTP_ESP_SendString(cmd);
-                ntp_wifi_state = NTP_WIFI_CONNECTING;
-                ntp_command_timer = current_time;
-                NTP_Debug_Print("WiFi connecting...\r\n");
             }
             break;
 
         case NTP_WIFI_CONNECTING:
-            if (current_time - ntp_command_timer > NTP_COMMAND_TIMEOUT_MS) {
+            if (NTP_ESP_CheckResponse("WIFI GOT IP")) {
+                NTP_Debug_Print("WiFi connected successfully!\r\n");
+                ntp_wifi_state = NTP_WIFI_CONNECTED;
+                ntp_retry_count = 0;
+                NTP_ESP_ClearResponseBuffer();
+            } else if (current_time - ntp_command_timer >
+                       NTP_COMMAND_TIMEOUT_MS) {
                 if (ntp_retry_count < NTP_MAX_RETRY) {
                     ntp_retry_count++;
                     NTP_Debug_Print("WiFi connection retry...\r\n");
                     NTP_ESP_ClearResponseBuffer();
                     char cmd[128];
-                    sprintf(cmd, "AT+CWJAP=\"%s\",\"%s\"", WIFI_SSID, WIFI_PASSWORD);
+                    sprintf(cmd, "AT+CWJAP=\"%s\",\"%s\"", WIFI_SSID,
+                            WIFI_PASSWORD);
+                    osDelay(5000);
                     NTP_ESP_SendString(cmd);
                     ntp_command_timer = current_time;
                 } else {
                     NTP_Debug_Print("WiFi connection failed\r\n");
-                    ntp_wifi_state = NTP_WIFI_IDLE;
                     ntp_retry_count = 0;
+                    osDelay(5000);
                 }
-            } else if (NTP_ESP_CheckResponse("WIFI GOT IP")) {
-                NTP_Debug_Print("WiFi connected successfully!\r\n");
-                ntp_wifi_state = NTP_WIFI_CONNECTED;
-                ntp_retry_count = 0;
-                osDelay(2000);
-                NTP_ESP_ClearResponseBuffer();
             }
             break;
 
         case NTP_WIFI_CONNECTED:
             if (!ntp_state_executed) {
                 NTP_ESP_SendString("AT+CIPMUX=1");
+                osDelay(2000);
                 ntp_wifi_state = NTP_CIPMUX_SETTING;
                 ntp_command_timer = current_time;
                 NTP_Debug_Print("Setting CIPMUX mode...\r\n");
@@ -399,7 +414,17 @@ void NTP_WiFi_StateMachine(void) {
             break;
 
         case NTP_CIPMUX_SETTING:
-            if (current_time - ntp_command_timer > NTP_COMMAND_TIMEOUT_MS) {
+            if (NTP_ESP_CheckResponse("OK")) {
+                NTP_Debug_Print("CIPMUX set successfully\r\n");
+                NTP_ESP_ClearResponseBuffer();
+                NTP_ESP_SendString("AT+CIPSTART=4,\"UDP\",\"" NTP_IP
+                                   "\"," NTP_PORT);
+                ntp_wifi_state = NTP_UDP_CONNECTING;
+                ntp_command_timer = current_time;
+                NTP_Debug_Print("NTP server connecting...\r\n");
+                ntp_retry_count = 0;
+            } else if (current_time - ntp_command_timer >
+                       NTP_COMMAND_TIMEOUT_MS) {
                 if (ntp_retry_count < NTP_MAX_RETRY) {
                     ntp_retry_count++;
                     NTP_Debug_Print("CIPMUX setting retry...\r\n");
@@ -411,37 +436,32 @@ void NTP_WiFi_StateMachine(void) {
                     ntp_wifi_state = NTP_WIFI_CONNECTED;
                     ntp_retry_count = 0;
                 }
-            } else if (NTP_ESP_CheckResponse("OK")) {
-                NTP_Debug_Print("CIPMUX set successfully\r\n");
-                NTP_ESP_ClearResponseBuffer();
-                NTP_ESP_SendString("AT+CIPSTART=4,\"UDP\",\"" NTP_IP "\"," NTP_PORT);
-                ntp_wifi_state = NTP_UDP_CONNECTING;
-                ntp_command_timer = current_time;
-                NTP_Debug_Print("NTP server connecting...\r\n");
-                ntp_retry_count = 0;
             }
             break;
 
         case NTP_UDP_CONNECTING:
-            if (current_time - ntp_command_timer > NTP_COMMAND_TIMEOUT_MS) {
-                if (ntp_retry_count < NTP_MAX_RETRY) {
-                    ntp_retry_count++;
-                    NTP_Debug_Print("UDP connection retry...\r\n");
-                    NTP_ESP_ClearResponseBuffer();
-                    NTP_ESP_SendString("AT+CIPSTART=4,\"UDP\",\"" NTP_IP "\"," NTP_PORT);
-                    ntp_command_timer = current_time;
-                } else {
-                    NTP_Debug_Print("UDP connection failed\r\n");
-                    ntp_wifi_state = NTP_WIFI_CONNECTED;
-                    ntp_retry_count = 0;
-                }
-            } else if (NTP_ESP_CheckResponse("CONNECT") || NTP_ESP_CheckResponse("ALREADY CONNECTED")) {
+            if (NTP_ESP_CheckResponse("CONNECT") ||
+                NTP_ESP_CheckResponse("ALREADY CONNECTED")) {
                 NTP_Debug_Print("UDP connection established\r\n");
                 osDelay(500);
                 NTP_ESP_ClearResponseBuffer();
                 ntp_wifi_state = NTP_UDP_CONNECTED;
                 ntp_retry_count = 0;
                 NTP_Debug_Print("Ready for NTP communication\r\n");
+            } else if (current_time - ntp_command_timer >
+                       NTP_COMMAND_TIMEOUT_MS) {
+                if (ntp_retry_count < NTP_MAX_RETRY) {
+                    ntp_retry_count++;
+                    NTP_Debug_Print("UDP connection retry...\r\n");
+                    NTP_ESP_ClearResponseBuffer();
+                    NTP_ESP_SendString("AT+CIPSTART=4,\"UDP\",\"" NTP_IP
+                                       "\"," NTP_PORT);
+                    ntp_command_timer = current_time;
+                } else {
+                    NTP_Debug_Print("UDP connection failed\r\n");
+                    ntp_wifi_state = NTP_WIFI_CONNECTED;
+                    ntp_retry_count = 0;
+                }
             }
             break;
 
@@ -472,47 +492,58 @@ void NTP_WiFi_StateMachine(void) {
                 HAL_UART_Transmit(huart_esp_module, ntp_packet, 48, 1000);
                 NTP_Debug_Print("NTP request sent\r\n");
                 ntp_command_timer = current_time;
-            } else if (NTP_ESP_CheckResponse("+IPD,4,48:") && ntp_data_received) {
+            } else if (NTP_ESP_CheckResponse("+IPD,4,48:") &&
+                       ntp_data_received) {
                 NTP_Debug_Print("NTP response received!\r\n");
 
                 // NTP 타임스탬프 추출
-                uint32_t ntp_timestamp = ((uint32_t)ntp_response_data[40] << 24) |
-                                        ((uint32_t)ntp_response_data[41] << 16) |
-                                        ((uint32_t)ntp_response_data[42] << 8) |
-                                        ((uint32_t)ntp_response_data[43]);
+                uint32_t ntp_timestamp =
+                    ((uint32_t)ntp_response_data[40] << 24) |
+                    ((uint32_t)ntp_response_data[41] << 16) |
+                    ((uint32_t)ntp_response_data[42] << 8) |
+                    ((uint32_t)ntp_response_data[43]);
 
                 if (ntp_timestamp > 2208988800UL) {
                     uint32_t unix_timestamp = ntp_timestamp - 2208988800UL;
                     uint32_t kst_timestamp = unix_timestamp + (9 * 3600);
-                    
+
                     // 일수 계산 (1970년 1월 1일부터)
                     uint32_t days_since_epoch = kst_timestamp / 86400;
                     uint32_t seconds_in_day = kst_timestamp % 86400;
-                    
+
                     // 연도 계산
                     uint32_t year = 1970;
                     uint32_t days_in_year;
-                    while (days_since_epoch >= (days_in_year = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) ? 366 : 365)) {
+                    while (
+                        days_since_epoch >=
+                        (days_in_year = ((year % 4 == 0 && year % 100 != 0) ||
+                                         (year % 400 == 0))
+                                            ? 366
+                                            : 365)) {
                         days_since_epoch -= days_in_year;
                         year++;
                     }
-                    
+
                     // 월과 일 계산
-                    uint8_t days_in_month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-                    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-                        days_in_month[1] = 29; // 윤년
+                    uint8_t days_in_month[] = {31, 28, 31, 30, 31, 30,
+                                               31, 31, 30, 31, 30, 31};
+                    if ((year % 4 == 0 && year % 100 != 0) ||
+                        (year % 400 == 0)) {
+                        days_in_month[1] = 29;  // 윤년
                     }
-                    
+
                     uint32_t month = 1;
                     while (days_since_epoch >= days_in_month[month - 1]) {
                         days_since_epoch -= days_in_month[month - 1];
                         month++;
                     }
                     uint32_t day = days_since_epoch + 1;
-                    
+
                     // 뮤텍스로 보호하여 시간 데이터 업데이트
-                    if (osMutexAcquire(NTP_MutexHandle, osWaitForever) == osOK) {
-                        current_time_data.years = year - 2000;  // 2000년 기준 (예: 2025 -> 25)
+                    if (osMutexAcquire(NTP_MutexHandle, osWaitForever) ==
+                        osOK) {
+                        current_time_data.years =
+                            year - 2000;  // 2000년 기준 (예: 2025 -> 25)
                         current_time_data.months = month;
                         current_time_data.days = day;
                         current_time_data.hours = (seconds_in_day / 3600) % 24;
@@ -524,10 +555,14 @@ void NTP_WiFi_StateMachine(void) {
                     }
 
                     char time_msg[100];
-                    sprintf(time_msg, "NTP Time (KST): 20%02d-%02d-%02d %02d:%02d:%02d\r\n",
-                            current_time_data.years, current_time_data.months, current_time_data.days,
-                            current_time_data.hours, current_time_data.minutes, current_time_data.seconds);
-                    HAL_UART_Transmit(huart_debug_module, (uint8_t *)time_msg, strlen(time_msg), 100);
+                    sprintf(
+                        time_msg,
+                        "NTP Time (KST): 20%02d-%02d-%02d %02d:%02d:%02d\r\n",
+                        current_time_data.years, current_time_data.months,
+                        current_time_data.days, current_time_data.hours,
+                        current_time_data.minutes, current_time_data.seconds);
+                    HAL_UART_Transmit(huart_debug_module, (uint8_t *)time_msg,
+                                      strlen(time_msg), 100);
                 } else {
                     NTP_Debug_Print("Invalid NTP timestamp received\r\n");
                 }

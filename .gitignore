@@ -1,4 +1,56 @@
+# CMake 관련 파일들
 CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+
+# Build 폴더 전체 (elf 파일 제외)
+build/
+!build/**/*.elf
+
+# Debug 폴더 관련
+Debug/
+!Debug/*.elf
+
+# IDE 관련 파일들
+*.launch
+.vscode/
+.settings/
+.project
+.cproject
+
+# 컴파일된 파일들
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.bin
+*.map
+*.list
+*.su
+*.cyclo
+*.d
+
+# 로그 파일들
+*.log
+
+# 임시 파일들
+*~
+*.swp
+*.swo
+*.tmpxt.user
 CMakeCache.txt
 CMakeFiles
 CMakeScripts

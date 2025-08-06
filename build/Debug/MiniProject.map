@@ -4382,7 +4382,6 @@ Discarded input sections
  .debug_macro   0x00000000      0x8ed CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x47 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x2aa CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00000000      0x126 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000      0x15a CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0xc9 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_macro   0x00000000       0x1c CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
@@ -6305,7 +6304,7 @@ LOAD C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb
                 0x08000000                g_pfnVectors
                 0x08000198                        . = ALIGN (0x4)
 
-.text           0x080001a0     0xb654
+.text           0x080001a0     0xb744
                 0x080001a0                        . = ALIGN (0x4)
  *(.text)
  .text          0x080001a0       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
@@ -6841,549 +6840,551 @@ LOAD C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb
                 0x08007884       0xe4 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
                 0x08007884                MX_FREERTOS_Init
  .text.StartTimeTask
-                0x08007968       0xd0 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x08007968       0xdc CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
                 0x08007968                StartTimeTask
  .text.StartAlarmTask
-                0x08007a38       0xbc CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x08007a38                StartAlarmTask
+                0x08007a44       0xbc CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x08007a44                StartAlarmTask
  .text.StartIRTask
-                0x08007af4      0x770 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x08007af4                StartIRTask
+                0x08007b00      0x770 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x08007b00                StartIRTask
  .text.StartUIStateTask
-                0x08008264      0x1a4 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x08008264                StartUIStateTask
+                0x08008270      0x1a4 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x08008270                StartUIStateTask
  .text.StartLCDTask
-                0x08008408       0x54 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x08008408                StartLCDTask
+                0x08008414       0x54 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x08008414                StartLCDTask
  .text.StartNTPTask
-                0x0800845c       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800845c                StartNTPTask
+                0x08008468       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x08008468                StartNTPTask
+ .text.Debug_Print
+                0x0800848c       0x44 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800848c                Debug_Print
  .text.MX_I2C1_Init
-                0x08008480       0x5c CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
-                0x08008480                MX_I2C1_Init
+                0x080084d0       0x5c CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+                0x080084d0                MX_I2C1_Init
  .text.HAL_I2C_MspInit
-                0x080084dc       0x90 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
-                0x080084dc                HAL_I2C_MspInit
+                0x0800852c       0x90 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+                0x0800852c                HAL_I2C_MspInit
  .text.MX_RTC_Init
-                0x0800856c       0x4c CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
-                0x0800856c                MX_RTC_Init
+                0x080085bc       0x4c CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+                0x080085bc                MX_RTC_Init
  .text.HAL_RTC_MspInit
-                0x080085b8       0x58 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
-                0x080085b8                HAL_RTC_MspInit
+                0x08008608       0x58 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+                0x08008608                HAL_RTC_MspInit
  .text.Parse_CompileTime_And_Set_RTC
-                0x08008610      0x160 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
-                0x08008610                Parse_CompileTime_And_Set_RTC
+                0x08008660      0x160 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+                0x08008660                Parse_CompileTime_And_Set_RTC
  .text.MX_TIM2_Init
-                0x08008770       0x98 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
-                0x08008770                MX_TIM2_Init
+                0x080087c0       0x98 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+                0x080087c0                MX_TIM2_Init
  .text.HAL_TIM_Base_MspInit
-                0x08008808       0x4c CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
-                0x08008808                HAL_TIM_Base_MspInit
+                0x08008858       0x4c CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+                0x08008858                HAL_TIM_Base_MspInit
  .text.MX_USART1_UART_Init
-                0x08008854       0x54 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
-                0x08008854                MX_USART1_UART_Init
+                0x080088a4       0x54 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+                0x080088a4                MX_USART1_UART_Init
  .text.MX_USART2_UART_Init
-                0x080088a8       0x54 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
-                0x080088a8                MX_USART2_UART_Init
+                0x080088f8       0x54 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+                0x080088f8                MX_USART2_UART_Init
  .text.HAL_UART_MspInit
-                0x080088fc      0x158 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
-                0x080088fc                HAL_UART_MspInit
+                0x0800894c      0x158 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+                0x0800894c                HAL_UART_MspInit
  .text.NMI_Handler
-                0x08008a54        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a54                NMI_Handler
+                0x08008aa4        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008aa4                NMI_Handler
  .text.HardFault_Handler
-                0x08008a5c        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a5c                HardFault_Handler
+                0x08008aac        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008aac                HardFault_Handler
  .text.MemManage_Handler
-                0x08008a64        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a64                MemManage_Handler
+                0x08008ab4        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008ab4                MemManage_Handler
  .text.BusFault_Handler
-                0x08008a6c        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a6c                BusFault_Handler
+                0x08008abc        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008abc                BusFault_Handler
  .text.UsageFault_Handler
-                0x08008a74        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a74                UsageFault_Handler
+                0x08008ac4        0x8 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008ac4                UsageFault_Handler
  .text.DebugMon_Handler
-                0x08008a7c        0xe CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a7c                DebugMon_Handler
+                0x08008acc        0xe CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008acc                DebugMon_Handler
  .text.SysTick_Handler
-                0x08008a8a       0x1a CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008a8a                SysTick_Handler
+                0x08008ada       0x1a CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008ada                SysTick_Handler
  .text.EXTI0_IRQHandler
-                0x08008aa4        0xe CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008aa4                EXTI0_IRQHandler
- *fill*         0x08008ab2        0x2 
+                0x08008af4        0xe CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008af4                EXTI0_IRQHandler
+ *fill*         0x08008b02        0x2 
  .text.TIM2_IRQHandler
-                0x08008ab4       0x14 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008ab4                TIM2_IRQHandler
+                0x08008b04       0x14 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008b04                TIM2_IRQHandler
  .text.USART1_IRQHandler
-                0x08008ac8       0x14 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008ac8                USART1_IRQHandler
+                0x08008b18       0x14 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008b18                USART1_IRQHandler
  .text.USART2_IRQHandler
-                0x08008adc       0x14 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008adc                USART2_IRQHandler
+                0x08008b2c       0x14 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008b2c                USART2_IRQHandler
  .text.EXTI15_10_IRQHandler
-                0x08008af0       0x10 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
-                0x08008af0                EXTI15_10_IRQHandler
+                0x08008b40       0x10 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x08008b40                EXTI15_10_IRQHandler
  .text.HAL_MspInit
-                0x08008b00       0x58 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
-                0x08008b00                HAL_MspInit
- .text._sbrk    0x08008b58       0x6c CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
-                0x08008b58                _sbrk
- .text._getpid  0x08008bc4       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008bc4                _getpid
- .text._kill    0x08008bd4       0x20 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008bd4                _kill
- .text._exit    0x08008bf4       0x16 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008bf4                _exit
- .text._read    0x08008c0a       0x3a CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008c0a                _read
- .text._write   0x08008c44       0x38 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008c44                _write
- .text._close   0x08008c7c       0x18 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008c7c                _close
- .text._fstat   0x08008c94       0x20 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008c94                _fstat
- .text._isatty  0x08008cb4       0x16 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008cb4                _isatty
- .text._lseek   0x08008cca       0x1a CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
-                0x08008cca                _lseek
+                0x08008b50       0x58 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x08008b50                HAL_MspInit
+ .text._sbrk    0x08008ba8       0x6c CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+                0x08008ba8                _sbrk
+ .text._getpid  0x08008c14       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008c14                _getpid
+ .text._kill    0x08008c24       0x20 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008c24                _kill
+ .text._exit    0x08008c44       0x16 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008c44                _exit
+ .text._read    0x08008c5a       0x3a CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008c5a                _read
+ .text._write   0x08008c94       0x38 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008c94                _write
+ .text._close   0x08008ccc       0x18 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008ccc                _close
+ .text._fstat   0x08008ce4       0x20 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008ce4                _fstat
+ .text._isatty  0x08008d04       0x16 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008d04                _isatty
+ .text._lseek   0x08008d1a       0x1a CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x08008d1a                _lseek
  .text.Reset_Handler
-                0x08008ce4       0x50 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
-                0x08008ce4                Reset_Handler
+                0x08008d34       0x50 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+                0x08008d34                Reset_Handler
  .text.Default_Handler
-                0x08008d34        0x2 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
-                0x08008d34                RTC_Alarm_IRQHandler
-                0x08008d34                EXTI2_IRQHandler
-                0x08008d34                SPI4_IRQHandler
-                0x08008d34                TIM1_CC_IRQHandler
-                0x08008d34                DMA2_Stream5_IRQHandler
-                0x08008d34                DMA1_Stream5_IRQHandler
-                0x08008d34                PVD_IRQHandler
-                0x08008d34                SDIO_IRQHandler
-                0x08008d34                TAMP_STAMP_IRQHandler
-                0x08008d34                EXTI3_IRQHandler
-                0x08008d34                TIM1_UP_TIM10_IRQHandler
-                0x08008d34                I2C3_ER_IRQHandler
-                0x08008d34                I2C2_EV_IRQHandler
-                0x08008d34                DMA1_Stream2_IRQHandler
-                0x08008d34                FPU_IRQHandler
-                0x08008d34                DMA2_Stream2_IRQHandler
-                0x08008d34                SPI1_IRQHandler
-                0x08008d34                TIM1_BRK_TIM9_IRQHandler
-                0x08008d34                DMA2_Stream3_IRQHandler
-                0x08008d34                USART6_IRQHandler
-                0x08008d34                DMA2_Stream0_IRQHandler
-                0x08008d34                TIM4_IRQHandler
-                0x08008d34                I2C1_EV_IRQHandler
-                0x08008d34                DMA1_Stream6_IRQHandler
-                0x08008d34                DMA1_Stream1_IRQHandler
-                0x08008d34                TIM3_IRQHandler
-                0x08008d34                RCC_IRQHandler
-                0x08008d34                Default_Handler
-                0x08008d34                ADC_IRQHandler
-                0x08008d34                DMA1_Stream7_IRQHandler
-                0x08008d34                SPI5_IRQHandler
-                0x08008d34                TIM5_IRQHandler
-                0x08008d34                DMA2_Stream7_IRQHandler
-                0x08008d34                I2C3_EV_IRQHandler
-                0x08008d34                EXTI9_5_IRQHandler
-                0x08008d34                RTC_WKUP_IRQHandler
-                0x08008d34                SPI2_IRQHandler
-                0x08008d34                DMA1_Stream0_IRQHandler
-                0x08008d34                EXTI4_IRQHandler
-                0x08008d34                WWDG_IRQHandler
-                0x08008d34                OTG_FS_WKUP_IRQHandler
-                0x08008d34                TIM1_TRG_COM_TIM11_IRQHandler
-                0x08008d34                EXTI1_IRQHandler
-                0x08008d34                I2C2_ER_IRQHandler
-                0x08008d34                DMA2_Stream1_IRQHandler
-                0x08008d34                FLASH_IRQHandler
-                0x08008d34                DMA2_Stream4_IRQHandler
-                0x08008d34                OTG_FS_IRQHandler
-                0x08008d34                SPI3_IRQHandler
-                0x08008d34                DMA1_Stream4_IRQHandler
-                0x08008d34                I2C1_ER_IRQHandler
-                0x08008d34                DMA2_Stream6_IRQHandler
-                0x08008d34                DMA1_Stream3_IRQHandler
+                0x08008d84        0x2 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+                0x08008d84                RTC_Alarm_IRQHandler
+                0x08008d84                EXTI2_IRQHandler
+                0x08008d84                SPI4_IRQHandler
+                0x08008d84                TIM1_CC_IRQHandler
+                0x08008d84                DMA2_Stream5_IRQHandler
+                0x08008d84                DMA1_Stream5_IRQHandler
+                0x08008d84                PVD_IRQHandler
+                0x08008d84                SDIO_IRQHandler
+                0x08008d84                TAMP_STAMP_IRQHandler
+                0x08008d84                EXTI3_IRQHandler
+                0x08008d84                TIM1_UP_TIM10_IRQHandler
+                0x08008d84                I2C3_ER_IRQHandler
+                0x08008d84                I2C2_EV_IRQHandler
+                0x08008d84                DMA1_Stream2_IRQHandler
+                0x08008d84                FPU_IRQHandler
+                0x08008d84                DMA2_Stream2_IRQHandler
+                0x08008d84                SPI1_IRQHandler
+                0x08008d84                TIM1_BRK_TIM9_IRQHandler
+                0x08008d84                DMA2_Stream3_IRQHandler
+                0x08008d84                USART6_IRQHandler
+                0x08008d84                DMA2_Stream0_IRQHandler
+                0x08008d84                TIM4_IRQHandler
+                0x08008d84                I2C1_EV_IRQHandler
+                0x08008d84                DMA1_Stream6_IRQHandler
+                0x08008d84                DMA1_Stream1_IRQHandler
+                0x08008d84                TIM3_IRQHandler
+                0x08008d84                RCC_IRQHandler
+                0x08008d84                Default_Handler
+                0x08008d84                ADC_IRQHandler
+                0x08008d84                DMA1_Stream7_IRQHandler
+                0x08008d84                SPI5_IRQHandler
+                0x08008d84                TIM5_IRQHandler
+                0x08008d84                DMA2_Stream7_IRQHandler
+                0x08008d84                I2C3_EV_IRQHandler
+                0x08008d84                EXTI9_5_IRQHandler
+                0x08008d84                RTC_WKUP_IRQHandler
+                0x08008d84                SPI2_IRQHandler
+                0x08008d84                DMA1_Stream0_IRQHandler
+                0x08008d84                EXTI4_IRQHandler
+                0x08008d84                WWDG_IRQHandler
+                0x08008d84                OTG_FS_WKUP_IRQHandler
+                0x08008d84                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08008d84                EXTI1_IRQHandler
+                0x08008d84                I2C2_ER_IRQHandler
+                0x08008d84                DMA2_Stream1_IRQHandler
+                0x08008d84                FLASH_IRQHandler
+                0x08008d84                DMA2_Stream4_IRQHandler
+                0x08008d84                OTG_FS_IRQHandler
+                0x08008d84                SPI3_IRQHandler
+                0x08008d84                DMA1_Stream4_IRQHandler
+                0x08008d84                I2C1_ER_IRQHandler
+                0x08008d84                DMA2_Stream6_IRQHandler
+                0x08008d84                DMA1_Stream3_IRQHandler
  .text.LCD_Delay
-                0x08008d36       0x16 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008d86       0x16 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
  .text.LCD_Init
-                0x08008d4c       0x40 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
-                0x08008d4c                LCD_Init
+                0x08008d9c       0x40 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008d9c                LCD_Init
  .text.LCD_SetCursor
-                0x08008d8c       0x36 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
-                0x08008d8c                LCD_SetCursor
+                0x08008ddc       0x36 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008ddc                LCD_SetCursor
  .text.LCD_Print
-                0x08008dc2       0x2a CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
-                0x08008dc2                LCD_Print
+                0x08008e12       0x2a CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008e12                LCD_Print
  .text.LCD_Send_Cmd
-                0x08008dec       0x30 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008e3c       0x30 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
  .text.LCD_Send_Data
-                0x08008e1c       0x30 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008e6c       0x30 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
  .text.LCD_Send
-                0x08008e4c       0x6c CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x08008e9c       0x6c CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
  .text.check_ir
-                0x08008eb8       0xb8 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
-                0x08008eb8                check_ir
+                0x08008f08       0xb8 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+                0x08008f08                check_ir
  .text.reset_ir_state
-                0x08008f70       0x38 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
-                0x08008f70                reset_ir_state
+                0x08008fc0       0x38 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+                0x08008fc0                reset_ir_state
  .text.dec_to_bcd
-                0x08008fa8       0x4c CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+                0x08008ff8       0x4c CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
  .text.ds1302_set_pin_output
-                0x08008ff4       0x38 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
-                0x08008ff4                ds1302_set_pin_output
+                0x08009044       0x38 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+                0x08009044                ds1302_set_pin_output
  .text.ds1302_write_byte
-                0x0800902c       0x68 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+                0x0800907c       0x68 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
  .text.DS1302_SetTime
-                0x08009094      0x100 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
-                0x08009094                DS1302_SetTime
+                0x080090e4      0x100 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+                0x080090e4                DS1302_SetTime
  .text.NTP_Timer_Init
-                0x08009194       0x94 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x08009194                NTP_Timer_Init
+                0x080091e4       0x94 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x080091e4                NTP_Timer_Init
  .text.NTP_Timer_Task
-                0x08009228       0x1a CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x08009228                NTP_Timer_Task
- *fill*         0x08009242        0x2 
+                0x08009278       0x1a CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009278                NTP_Timer_Task
+ *fill*         0x08009292        0x2 
  .text.NTP_UART_RxCallback
-                0x08009244       0x7c CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x08009244                NTP_UART_RxCallback
+                0x08009294       0x7c CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009294                NTP_UART_RxCallback
  .text.NTP_GetCurrentTime
-                0x080092c0       0x44 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x080092c0                NTP_GetCurrentTime
+                0x08009310       0x44 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009310                NTP_GetCurrentTime
  .text.NTP_RingBuffer_Init
-                0x08009304       0x24 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009354       0x24 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_RingBuffer_Put
-                0x08009328       0x5c CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009378       0x5c CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_RingBuffer_Get
-                0x08009384       0x60 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x080093d4       0x60 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_ESP_SendString
-                0x080093e4       0x44 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009434       0x98 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_Debug_Print
-                0x08009428       0x14 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x080094cc       0x4c CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_ESP_CheckResponse
-                0x0800943c       0x28 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009518       0x28 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_ESP_ClearResponseBuffer
-                0x08009464       0x24 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009540       0x24 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  .text.NTP_ESP_ProcessResponse
-                0x08009488      0x114 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x08009488                NTP_ESP_ProcessResponse
+                0x08009564      0x114 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009564                NTP_ESP_ProcessResponse
  .text.NTP_WiFi_StateMachine
-                0x0800959c      0x8cc CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x0800959c                NTP_WiFi_StateMachine
+                0x08009678      0x8e0 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009678                NTP_WiFi_StateMachine
  .text.NTP_RequestTimeSync
-                0x08009e68       0x40 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
-                0x08009e68                NTP_RequestTimeSync
+                0x08009f58       0x40 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x08009f58                NTP_RequestTimeSync
  .text.__udivmoddi4
-                0x08009ea8      0x2f8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
-                0x08009ea8                __udivmoddi4
- .text.atoi     0x0800a1a0        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-atoi.o)
-                0x0800a1a0                atoi
+                0x08009f98      0x2f8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x08009f98                __udivmoddi4
+ .text.atoi     0x0800a290        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-atoi.o)
+                0x0800a290                atoi
  .text._strtol_l.isra.0
-                0x0800a1a8       0xf4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtol.o)
- .text.strtol   0x0800a29c       0x14 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtol.o)
-                0x0800a29c                strtol
- .text.std      0x0800a2b0       0x6c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a298       0xf4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtol.o)
+ .text.strtol   0x0800a38c       0x14 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtol.o)
+                0x0800a38c                strtol
+ .text.std      0x0800a3a0       0x6c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
  .text.stdio_exit_handler
-                0x0800a31c       0x18 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a40c       0x18 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
  .text.cleanup_stdio
-                0x0800a334       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a424       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
  .text.global_stdio_init.part.0
-                0x0800a374       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a464       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
  .text.__sfp_lock_acquire
-                0x0800a3b4        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
-                0x0800a3b4                __sfp_lock_acquire
+                0x0800a4a4        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a4a4                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x0800a3c0        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
-                0x0800a3c0                __sfp_lock_release
- .text.__sinit  0x0800a3cc       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
-                0x0800a3cc                __sinit
+                0x0800a4b0        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a4b0                __sfp_lock_release
+ .text.__sinit  0x0800a4bc       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+                0x0800a4bc                __sinit
  .text._fwalk_sglue
-                0x0800a3fc       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fwalk.o)
-                0x0800a3fc                _fwalk_sglue
+                0x0800a4ec       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fwalk.o)
+                0x0800a4ec                _fwalk_sglue
  .text.snprintf
-                0x0800a438       0x6c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-snprintf.o)
-                0x0800a438                sniprintf
-                0x0800a438                snprintf
- .text.sprintf  0x0800a4a4       0x44 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sprintf.o)
-                0x0800a4a4                siprintf
-                0x0800a4a4                sprintf
- .text.__sread  0x0800a4e8       0x22 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
-                0x0800a4e8                __sread
+                0x0800a528       0x6c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-snprintf.o)
+                0x0800a528                sniprintf
+                0x0800a528                snprintf
+ .text.sprintf  0x0800a594       0x44 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sprintf.o)
+                0x0800a594                siprintf
+                0x0800a594                sprintf
+ .text.__sread  0x0800a5d8       0x22 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
+                0x0800a5d8                __sread
  .text.__swrite
-                0x0800a50a       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
-                0x0800a50a                __swrite
- .text.__sseek  0x0800a542       0x26 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
-                0x0800a542                __sseek
+                0x0800a5fa       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
+                0x0800a5fa                __swrite
+ .text.__sseek  0x0800a632       0x26 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
+                0x0800a632                __sseek
  .text.__sclose
-                0x0800a568        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
-                0x0800a568                __sclose
- .text.memmove  0x0800a570       0x32 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
-                0x0800a570                memmove
- .text.memset   0x0800a5a2       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
-                0x0800a5a2                memset
- .text.strncmp  0x0800a5b2       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strncmp.o)
-                0x0800a5b2                strncmp
- *fill*         0x0800a5d6        0x2 
- .text.strtok   0x0800a5d8       0x7c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok.o)
-                0x0800a5d8                strtok
+                0x0800a658        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
+                0x0800a658                __sclose
+ .text.memmove  0x0800a660       0x32 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+                0x0800a660                memmove
+ .text.memset   0x0800a692       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+                0x0800a692                memset
+ .text.strncmp  0x0800a6a2       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strncmp.o)
+                0x0800a6a2                strncmp
+ *fill*         0x0800a6c6        0x2 
+ .text.strtok   0x0800a6c8       0x7c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok.o)
+                0x0800a6c8                strtok
  .text.__strtok_r
-                0x0800a654       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok_r.o)
-                0x0800a654                __strtok_r
- .text.strstr   0x0800a6a4       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strstr.o)
-                0x0800a6a4                strstr
+                0x0800a744       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok_r.o)
+                0x0800a744                __strtok_r
+ .text.strstr   0x0800a794       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strstr.o)
+                0x0800a794                strstr
  .text._close_r
-                0x0800a6d0       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-closer.o)
-                0x0800a6d0                _close_r
+                0x0800a7c0       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-closer.o)
+                0x0800a7c0                _close_r
  .text._reclaim_reent
-                0x0800a6f0       0xbc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
-                0x0800a6f0                _reclaim_reent
+                0x0800a7e0       0xbc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
+                0x0800a7e0                _reclaim_reent
  .text._lseek_r
-                0x0800a7ac       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lseekr.o)
-                0x0800a7ac                _lseek_r
- .text._read_r  0x0800a7d0       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-readr.o)
-                0x0800a7d0                _read_r
+                0x0800a89c       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lseekr.o)
+                0x0800a89c                _lseek_r
+ .text._read_r  0x0800a8c0       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-readr.o)
+                0x0800a8c0                _read_r
  .text._write_r
-                0x0800a7f4       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-writer.o)
-                0x0800a7f4                _write_r
- .text.__errno  0x0800a818        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
-                0x0800a818                __errno
+                0x0800a8e4       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-writer.o)
+                0x0800a8e4                _write_r
+ .text.__errno  0x0800a908        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+                0x0800a908                __errno
  .text.__libc_init_array
-                0x0800a824       0x48 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
-                0x0800a824                __libc_init_array
+                0x0800a914       0x48 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+                0x0800a914                __libc_init_array
  .text.__retarget_lock_init_recursive
-                0x0800a86c        0x2 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
-                0x0800a86c                __retarget_lock_init_recursive
+                0x0800a95c        0x2 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+                0x0800a95c                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x0800a86e        0x2 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
-                0x0800a86e                __retarget_lock_acquire_recursive
+                0x0800a95e        0x2 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+                0x0800a95e                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x0800a870        0x2 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
-                0x0800a870                __retarget_lock_release_recursive
- .text.memcpy   0x0800a872       0x1c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
-                0x0800a872                memcpy
- *fill*         0x0800a88e        0x2 
+                0x0800a960        0x2 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+                0x0800a960                __retarget_lock_release_recursive
+ .text.memcpy   0x0800a962       0x1c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+                0x0800a962                memcpy
+ *fill*         0x0800a97e        0x2 
  .text.__assert_func
-                0x0800a890       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-assert.o)
-                0x0800a890                __assert_func
- .text._free_r  0x0800a8cc       0x94 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
-                0x0800a8cc                _free_r
- .text.malloc   0x0800a960       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
-                0x0800a960                malloc
+                0x0800a980       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-assert.o)
+                0x0800a980                __assert_func
+ .text._free_r  0x0800a9bc       0x94 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+                0x0800a9bc                _free_r
+ .text.malloc   0x0800aa50       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+                0x0800aa50                malloc
  .text.sbrk_aligned
-                0x0800a970       0x44 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+                0x0800aa60       0x44 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
  .text._malloc_r
-                0x0800a9b4      0x100 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
-                0x0800a9b4                _malloc_r
+                0x0800aaa4      0x100 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+                0x0800aaa4                _malloc_r
  .text.__malloc_lock
-                0x0800aab4        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
-                0x0800aab4                __malloc_lock
+                0x0800aba4        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+                0x0800aba4                __malloc_lock
  .text.__malloc_unlock
-                0x0800aac0        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
-                0x0800aac0                __malloc_unlock
+                0x0800abb0        0xc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+                0x0800abb0                __malloc_unlock
  .text.__ssputs_r
-                0x0800aacc       0xc0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
-                0x0800aacc                __ssputs_r
+                0x0800abbc       0xc0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x0800abbc                __ssputs_r
  .text._svfprintf_r
-                0x0800ab8c      0x1f0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
-                0x0800ab8c                _svfiprintf_r
-                0x0800ab8c                _svfprintf_r
+                0x0800ac7c      0x1f0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x0800ac7c                _svfiprintf_r
+                0x0800ac7c                _svfprintf_r
  .text._printf_common
-                0x0800ad7c       0xda C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0800ad7c                _printf_common
- *fill*         0x0800ae56        0x2 
+                0x0800ae6c       0xda C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0800ae6c                _printf_common
+ *fill*         0x0800af46        0x2 
  .text._printf_i
-                0x0800ae58      0x24c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
-                0x0800ae58                _printf_i
+                0x0800af48      0x24c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0800af48                _printf_i
  .text.__sflush_r
-                0x0800b0a4      0x104 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fflush.o)
-                0x0800b0a4                __sflush_r
+                0x0800b194      0x104 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fflush.o)
+                0x0800b194                __sflush_r
  .text._fflush_r
-                0x0800b1a8       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fflush.o)
-                0x0800b1a8                _fflush_r
- .text.fprintf  0x0800b1f8       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fprintf.o)
-                0x0800b1f8                fiprintf
-                0x0800b1f8                fprintf
- .text._sbrk_r  0x0800b21c       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
-                0x0800b21c                _sbrk_r
- .text.abort    0x0800b23c        0xe C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
-                0x0800b23c                abort
+                0x0800b298       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fflush.o)
+                0x0800b298                _fflush_r
+ .text.fprintf  0x0800b2e8       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fprintf.o)
+                0x0800b2e8                fiprintf
+                0x0800b2e8                fprintf
+ .text._sbrk_r  0x0800b30c       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+                0x0800b30c                _sbrk_r
+ .text.abort    0x0800b32c        0xe C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+                0x0800b32c                abort
  .text._realloc_r
-                0x0800b24a       0x5c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reallocr.o)
-                0x0800b24a                _realloc_r
+                0x0800b33a       0x5c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reallocr.o)
+                0x0800b33a                _realloc_r
  .text.__sfputc_r
-                0x0800b2a6       0x2e C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0800b396       0x2e C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0800b2d4       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x0800b2d4                __sfputs_r
+                0x0800b3c4       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0800b3c4                __sfputs_r
  .text._vfprintf_r
-                0x0800b2f8      0x228 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x0800b2f8                _vfprintf_r
-                0x0800b2f8                _vfiprintf_r
+                0x0800b3e8      0x228 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0800b3e8                _vfprintf_r
+                0x0800b3e8                _vfiprintf_r
  .text.__swbuf_r
-                0x0800b520       0x7c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wbuf.o)
-                0x0800b520                __swbuf_r
+                0x0800b610       0x7c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wbuf.o)
+                0x0800b610                __swbuf_r
  .text.__swsetup_r
-                0x0800b59c       0xa8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wsetup.o)
-                0x0800b59c                __swsetup_r
+                0x0800b68c       0xa8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wsetup.o)
+                0x0800b68c                __swsetup_r
  .text._raise_r
-                0x0800b644       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
-                0x0800b644                _raise_r
- .text.raise    0x0800b694       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
-                0x0800b694                raise
- .text._kill_r  0x0800b6a4       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
-                0x0800b6a4                _kill_r
+                0x0800b734       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+                0x0800b734                _raise_r
+ .text.raise    0x0800b784       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+                0x0800b784                raise
+ .text._kill_r  0x0800b794       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+                0x0800b794                _kill_r
  .text._getpid_r
-                0x0800b6c8        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
-                0x0800b6c8                _getpid_r
+                0x0800b7b8        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+                0x0800b7b8                _getpid_r
  .text._malloc_usable_size_r
-                0x0800b6cc       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-msizer.o)
-                0x0800b6cc                _malloc_usable_size_r
+                0x0800b7bc       0x10 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-msizer.o)
+                0x0800b7bc                _malloc_usable_size_r
  .text.__swhatbuf_r
-                0x0800b6dc       0x48 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-makebuf.o)
-                0x0800b6dc                __swhatbuf_r
+                0x0800b7cc       0x48 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-makebuf.o)
+                0x0800b7cc                __swhatbuf_r
  .text.__smakebuf_r
-                0x0800b724       0x72 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-makebuf.o)
-                0x0800b724                __smakebuf_r
- *fill*         0x0800b796        0x2 
+                0x0800b814       0x72 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-makebuf.o)
+                0x0800b814                __smakebuf_r
+ *fill*         0x0800b886        0x2 
  .text._fstat_r
-                0x0800b798       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fstatr.o)
-                0x0800b798                _fstat_r
+                0x0800b888       0x24 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fstatr.o)
+                0x0800b888                _fstat_r
  .text._isatty_r
-                0x0800b7bc       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-isattyr.o)
-                0x0800b7bc                _isatty_r
+                0x0800b8ac       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-isattyr.o)
+                0x0800b8ac                _isatty_r
  *(.glue_7)
- .glue_7        0x0800b7dc        0x0 linker stubs
+ .glue_7        0x0800b8cc        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800b7dc        0x0 linker stubs
+ .glue_7t       0x0800b8cc        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0800b7dc        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .eh_frame      0x0800b8cc        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  *(.init)
- .init          0x0800b7dc        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0800b7dc                _init
- .init          0x0800b7e0        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+ .init          0x0800b8cc        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800b8cc                _init
+ .init          0x0800b8d0        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
  *(.fini)
- .fini          0x0800b7e8        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
-                0x0800b7e8                _fini
- .fini          0x0800b7ec        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
-                0x0800b7f4                        . = ALIGN (0x4)
-                0x0800b7f4                        _etext = .
+ .fini          0x0800b8d8        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crti.o
+                0x0800b8d8                _fini
+ .fini          0x0800b8dc        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtn.o
+                0x0800b8e4                        . = ALIGN (0x4)
+                0x0800b8e4                        _etext = .
 
-.vfp11_veneer   0x0800b7f4        0x0
- .vfp11_veneer  0x0800b7f4        0x0 linker stubs
+.vfp11_veneer   0x0800b8e4        0x0
+ .vfp11_veneer  0x0800b8e4        0x0 linker stubs
 
-.v4_bx          0x0800b7f4        0x0
- .v4_bx         0x0800b7f4        0x0 linker stubs
+.v4_bx          0x0800b8e4        0x0
+ .v4_bx         0x0800b8e4        0x0 linker stubs
 
-.iplt           0x0800b7f4        0x0
- .iplt          0x0800b7f4        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.iplt           0x0800b8e4        0x0
+ .iplt          0x0800b8e4        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.rodata         0x0800b7f4      0x92c
-                0x0800b7f4                        . = ALIGN (0x4)
+.rodata         0x0800b8e4      0x960
+                0x0800b8e4                        . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0800b7f4        0x5 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- *fill*         0x0800b7f9        0x3 
- .rodata        0x0800b7fc        0xd cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- *fill*         0x0800b809        0x3 
- .rodata        0x0800b80c      0x113 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- *fill*         0x0800b91f        0x1 
- .rodata        0x0800b920       0x80 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .rodata        0x0800b9a0      0x49a CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .rodata        0x0800b8e4        0x5 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ *fill*         0x0800b8e9        0x3 
+ .rodata        0x0800b8ec        0xd cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ *fill*         0x0800b8f9        0x3 
+ .rodata        0x0800b8fc      0x130 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .rodata        0x0800ba2c       0x80 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .rodata        0x0800baac      0x4b2 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
  *(.rodata*)
- *fill*         0x0800be3a        0x2 
+ *fill*         0x0800bf5e        0x2 
  .rodata.AHBPrescTable
-                0x0800be3c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800be3c                AHBPrescTable
+                0x0800bf60       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x0800bf60                AHBPrescTable
  .rodata.APBPrescTable
-                0x0800be4c        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
-                0x0800be4c                APBPrescTable
+                0x0800bf70        0x8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+                0x0800bf70                APBPrescTable
  .rodata.TimeTask_attributes
-                0x0800be54       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800be54                TimeTask_attributes
+                0x0800bf78       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800bf78                TimeTask_attributes
  .rodata.AlarmTask_attributes
-                0x0800be78       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800be78                AlarmTask_attributes
+                0x0800bf9c       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800bf9c                AlarmTask_attributes
  .rodata.IRTask_attributes
-                0x0800be9c       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800be9c                IRTask_attributes
+                0x0800bfc0       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800bfc0                IRTask_attributes
  .rodata.UIStateTask_attributes
-                0x0800bec0       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800bec0                UIStateTask_attributes
+                0x0800bfe4       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800bfe4                UIStateTask_attributes
  .rodata.LCDTask_attributes
-                0x0800bee4       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800bee4                LCDTask_attributes
+                0x0800c008       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800c008                LCDTask_attributes
  .rodata.NTPTask_attributes
-                0x0800bf08       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800bf08                NTPTask_attributes
+                0x0800c02c       0x24 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800c02c                NTPTask_attributes
  .rodata.LCDMutex_attributes
-                0x0800bf2c       0x10 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
-                0x0800bf2c                LCDMutex_attributes
+                0x0800c050       0x10 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x0800c050                LCDMutex_attributes
  .rodata._ctype_
-                0x0800bf3c      0x101 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-ctype_.o)
-                0x0800bf3c                _ctype_
+                0x0800c060      0x101 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-ctype_.o)
+                0x0800c060                _ctype_
  .rodata.strtok.str1.1
-                0x0800c03d       0xe1 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok.o)
+                0x0800c161       0xe1 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok.o)
                                  0x72 (size before relaxing)
  .rodata.__assert_func.str1.1
-                0x0800c11e       0x3d C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-assert.o)
+                0x0800c242       0x3d C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-assert.o)
  .rodata._svfprintf_r.str1.1
-                0x0800c11e       0x11 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+                0x0800c242       0x11 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
  .rodata._printf_i.str1.1
-                0x0800c11e       0x22 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+                0x0800c242       0x22 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
  .rodata._vfprintf_r.str1.1
-                0x0800c11e       0x11 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
-                0x0800c15c                        . = ALIGN (0x4)
- *fill*         0x0800c11e        0x2 
+                0x0800c242       0x11 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
+                0x0800c280                        . = ALIGN (0x4)
+ *fill*         0x0800c242        0x2 
 
-.ARM.extab      0x0800c120        0x0
-                0x0800c120                        . = ALIGN (0x4)
+.ARM.extab      0x0800c244        0x0
+                0x0800c244                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800c120                        . = ALIGN (0x4)
+                0x0800c244                        . = ALIGN (0x4)
 
-.ARM            0x0800c120        0x8
-                0x0800c120                        . = ALIGN (0x4)
-                0x0800c120                        __exidx_start = .
+.ARM            0x0800c244        0x8
+                0x0800c244                        . = ALIGN (0x4)
+                0x0800c244                        __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0800c120        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
- .ARM.exidx     0x0800c128        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memchr.o)
+ .ARM.exidx     0x0800c244        0x8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
+ .ARM.exidx     0x0800c24c        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memchr.o)
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__udivmoddi4
-                0x0800c128        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+                0x0800c24c        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
                                   0x8 (size before relaxing)
-                0x0800c128                        __exidx_end = .
-                0x0800c128                        . = ALIGN (0x4)
+                0x0800c24c                        __exidx_end = .
+                0x0800c24c                        . = ALIGN (0x4)
 
-.preinit_array  0x0800c128        0x0
-                0x0800c128                        . = ALIGN (0x4)
-                0x0800c128                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800c24c        0x0
+                0x0800c24c                        . = ALIGN (0x4)
+                0x0800c24c                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800c128                        PROVIDE (__preinit_array_end = .)
-                0x0800c128                        . = ALIGN (0x4)
+                0x0800c24c                        PROVIDE (__preinit_array_end = .)
+                0x0800c24c                        . = ALIGN (0x4)
 
-.init_array     0x0800c128        0x4
-                0x0800c128                        . = ALIGN (0x4)
-                0x0800c128                        PROVIDE (__init_array_start = .)
+.init_array     0x0800c24c        0x4
+                0x0800c24c                        . = ALIGN (0x4)
+                0x0800c24c                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800c128        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-                0x0800c12c                        PROVIDE (__init_array_end = .)
-                0x0800c12c                        . = ALIGN (0x4)
+ .init_array    0x0800c24c        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+                0x0800c250                        PROVIDE (__init_array_end = .)
+                0x0800c250                        . = ALIGN (0x4)
 
-.fini_array     0x0800c12c        0x4
-                0x0800c12c                        . = ALIGN (0x4)
+.fini_array     0x0800c250        0x4
+                0x0800c250                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0800c12c        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+ .fini_array    0x0800c250        0x4 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0800c130                        . = ALIGN (0x4)
-                0x0800c130                        _sidata = LOADADDR (.data)
+                0x0800c254                        . = ALIGN (0x4)
+                0x0800c254                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x0800c130        0x0
- .rel.iplt      0x0800c130        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
+.rel.dyn        0x0800c254        0x0
+ .rel.iplt      0x0800c254        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.data           0x20000000       0x6c load address 0x0800c130
+.data           0x20000000       0x6c load address 0x0800c254
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -7413,16 +7414,16 @@ LOAD C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb
                 0x2000006c                        . = ALIGN (0x4)
 
 .tm_clone_table
-                0x2000006c        0x0 load address 0x0800c19c
+                0x2000006c        0x0 load address 0x0800c2c0
  .tm_clone_table
                 0x2000006c        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
  .tm_clone_table
                 0x2000006c        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtend.o
 
-.igot.plt       0x2000006c        0x0 load address 0x0800c19c
+.igot.plt       0x2000006c        0x0 load address 0x0800c2c0
  .igot.plt      0x2000006c        0x0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.tdata          0x2000006c        0x0 load address 0x0800c19c
+.tdata          0x2000006c        0x0 load address 0x0800c2c0
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x2000006c                        . = ALIGN (0x4)
                 0x2000006c                        _edata = .
@@ -7439,7 +7440,7 @@ LOAD C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x2000006c        0x0 load address 0x0800c19c
+.tbss           0x2000006c        0x0 load address 0x0800c2c0
                 0x2000006c                        _sbss = .
                 0x2000006c                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -7456,7 +7457,7 @@ LOAD C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x20000070     0x5500 load address 0x0800c19c
+.bss            0x20000070     0x5500 load address 0x0800c2c0
  *(.bss)
  *(.bss*)
  .bss.completed.1
@@ -7764,7 +7765,7 @@ LOAD C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20005570      0x600 load address 0x0800c19c
+                0x20005570      0x600 load address 0x0800c2c0
                 0x20005570                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x20005570                        PROVIDE (_end = .)
@@ -8002,7 +8003,7 @@ LOAD linker stubs
  .comment       0x00000046       0x47 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
  .comment       0x00000046       0x47 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_info     0x00000000    0x2235f
+.debug_info     0x00000000    0x2264d
  .debug_info    0x00000000      0x53e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_info    0x0000053e      0x904 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_info    0x00000e42      0x5a1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
@@ -8025,22 +8026,22 @@ LOAD linker stubs
  .debug_info    0x00018e2f      0x4de cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .debug_info    0x0001930d     0x193d CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_info    0x0001ac4a      0x5fc CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
- .debug_info    0x0001b246     0x1662 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_info    0x0001c8a8      0x9a5 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
- .debug_info    0x0001d24d      0x7dd CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .debug_info    0x0001da2a      0xb98 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
- .debug_info    0x0001e5c2      0xba2 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
- .debug_info    0x0001f164      0x9d9 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x0001fb3d      0x44f CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x0001ff8c      0x168 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_info    0x000200f4      0x6b4 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_info    0x000207a8       0x30 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
- .debug_info    0x000207d8      0x826 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_info    0x00020ffe      0x12a CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
- .debug_info    0x00021128      0x3bd CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
- .debug_info    0x000214e5      0xe7a CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .debug_info    0x0001b246     0x1930 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_info    0x0001cb76      0x9a5 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+ .debug_info    0x0001d51b      0x7dd CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .debug_info    0x0001dcf8      0xb98 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+ .debug_info    0x0001e890      0xba2 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+ .debug_info    0x0001f432      0x9d9 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x0001fe0b      0x44f CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x0002025a      0x168 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x000203c2      0x6b4 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x00020a76       0x30 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+ .debug_info    0x00020aa6      0x826 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_info    0x000212cc      0x12a CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+ .debug_info    0x000213f6      0x3bd CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+ .debug_info    0x000217b3      0xe9a CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_abbrev   0x00000000     0x50dd
+.debug_abbrev   0x00000000     0x50ec
  .debug_abbrev  0x00000000      0x11a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_abbrev  0x0000011a      0x2b6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_abbrev  0x000003d0      0x1b2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
@@ -8063,22 +8064,22 @@ LOAD linker stubs
  .debug_abbrev  0x000031e0      0x25c cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .debug_abbrev  0x0000343c      0x32d CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_abbrev  0x00003769      0x173 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x000038dc      0x2df CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_abbrev  0x00003bbb      0x1f0 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
- .debug_abbrev  0x00003dab      0x201 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .debug_abbrev  0x00003fac      0x20a CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
- .debug_abbrev  0x000041b6      0x21d CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x000043d3      0x1d9 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x000045ac      0x119 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x000046c5       0xbc CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_abbrev  0x00004781      0x1bc CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_abbrev  0x0000493d       0x24 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
- .debug_abbrev  0x00004961      0x1f5 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_abbrev  0x00004b56       0x99 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
- .debug_abbrev  0x00004bef      0x1ac CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
- .debug_abbrev  0x00004d9b      0x342 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .debug_abbrev  0x000038dc      0x2ee CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_abbrev  0x00003bca      0x1f0 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+ .debug_abbrev  0x00003dba      0x201 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .debug_abbrev  0x00003fbb      0x20a CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+ .debug_abbrev  0x000041c5      0x21d CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+ .debug_abbrev  0x000043e2      0x1d9 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x000045bb      0x119 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x000046d4       0xbc CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_abbrev  0x00004790      0x1bc CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_abbrev  0x0000494c       0x24 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+ .debug_abbrev  0x00004970      0x1f5 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_abbrev  0x00004b65       0x99 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+ .debug_abbrev  0x00004bfe      0x1ac CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+ .debug_abbrev  0x00004daa      0x342 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_aranges  0x00000000     0x1c80
+.debug_aranges  0x00000000     0x1c88
  .debug_aranges
                 0x00000000       0x28 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_aranges
@@ -8124,36 +8125,36 @@ LOAD linker stubs
  .debug_aranges
                 0x00001860       0x20 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
  .debug_aranges
-                0x00001880       0x50 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x00001880       0x58 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
  .debug_aranges
-                0x000018d0       0x30 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+                0x000018d8       0x30 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
  .debug_aranges
-                0x00001900       0x38 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+                0x00001908       0x38 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
  .debug_aranges
-                0x00001938       0x30 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+                0x00001940       0x30 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
  .debug_aranges
-                0x00001968       0x38 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+                0x00001970       0x38 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
  .debug_aranges
-                0x000019a0       0x78 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x000019a8       0x78 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_aranges
-                0x00001a18       0x20 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x00001a20       0x20 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_aranges
-                0x00001a38       0x20 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+                0x00001a40       0x20 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
  .debug_aranges
-                0x00001a58       0xa8 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x00001a60       0xa8 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
  .debug_aranges
-                0x00001b00       0x28 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+                0x00001b08       0x28 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
  .debug_aranges
-                0x00001b28       0x58 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x00001b30       0x58 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
  .debug_aranges
-                0x00001b80       0x28 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+                0x00001b88       0x28 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
  .debug_aranges
-                0x00001ba8       0x40 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+                0x00001bb0       0x40 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
  .debug_aranges
-                0x00001be8       0x98 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x00001bf0       0x98 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
 .debug_rnglists
-                0x00000000     0x1633
+                0x00000000     0x163a
  .debug_rnglists
                 0x00000000       0x1a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_rnglists
@@ -8199,35 +8200,35 @@ LOAD linker stubs
  .debug_rnglists
                 0x0000133d       0x14 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
  .debug_rnglists
-                0x00001351       0x55 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+                0x00001351       0x5b CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
  .debug_rnglists
-                0x000013a6       0x20 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+                0x000013ac       0x20 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
  .debug_rnglists
-                0x000013c6       0x26 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+                0x000013cc       0x26 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
  .debug_rnglists
-                0x000013ec       0x20 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+                0x000013f2       0x20 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
  .debug_rnglists
-                0x0000140c       0x26 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+                0x00001412       0x26 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
  .debug_rnglists
-                0x00001432       0x55 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+                0x00001438       0x55 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
  .debug_rnglists
-                0x00001487       0x13 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+                0x0000148d       0x13 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
  .debug_rnglists
-                0x0000149a       0x13 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+                0x000014a0       0x13 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
  .debug_rnglists
-                0x000014ad       0x79 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+                0x000014b3       0x79 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
  .debug_rnglists
-                0x00001526       0x19 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+                0x0000152c       0x19 CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
  .debug_rnglists
-                0x0000153f       0x3d CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+                0x00001545       0x3d CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
  .debug_rnglists
-                0x0000157c       0x1a CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+                0x00001582       0x1a CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
  .debug_rnglists
-                0x00001596       0x2c CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+                0x0000159c       0x2c CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
  .debug_rnglists
-                0x000015c2       0x71 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+                0x000015c8       0x72 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_macro    0x00000000    0x1b586
+.debug_macro    0x00000000    0x1b6b0
  .debug_macro   0x00000000      0x200 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x00000200      0xad8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_macro   0x00000cd8       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
@@ -8305,57 +8306,58 @@ LOAD linker stubs
  .debug_macro   0x00017763      0x1b1 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
  .debug_macro   0x00017914      0x233 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .debug_macro   0x00017b47      0x432 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00017f79       0xd4 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x0001804d      0x170 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x000181bd       0x66 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00018223       0xdd CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00018300       0x16 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00018316       0x10 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00018326       0x1c CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00018342       0x16 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x00018358      0x170 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x000184c8       0x16 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_macro   0x000184de      0x219 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
- .debug_macro   0x000186f7      0x43a CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_macro   0x00018b31       0x6c CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_macro   0x00018b9d       0x22 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_macro   0x00018bbf      0x219 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
- .debug_macro   0x00018dd8      0x307 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .debug_macro   0x000190df      0x219 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
- .debug_macro   0x000192f8      0x219 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
- .debug_macro   0x00019511      0x31e CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_macro   0x0001982f      0x20f CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_macro   0x00019a3e      0x103 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00019b41       0x10 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00019b51      0x23c CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_macro   0x00019d8d      0x265 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x00019ff2       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a002       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a012       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a022       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a032       0x1c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a04e       0x52 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a0a0       0x22 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a0c2       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a0d2       0x52 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a124       0xcf CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a1f3       0x1c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a20f       0x3d CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a24c       0x35 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a281      0x12c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a3ad      0x242 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a5ef       0x1c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a60b       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a61b      0x18a CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a7a5       0x16 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a7bb       0xce CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_macro   0x0001a889      0x3a9 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_macro   0x0001ac32       0xda CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_macro   0x0001ad0c      0x21d CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
- .debug_macro   0x0001af29      0x257 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
- .debug_macro   0x0001b180      0x406 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .debug_macro   0x00017f79      0x126 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001809f       0xd4 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018173      0x170 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x000182e3       0x66 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018349       0xdd CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018426       0x16 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001843c       0x10 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001844c       0x1c CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018468       0x16 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x0001847e      0x170 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x000185ee       0x16 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_macro   0x00018604      0x219 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x0001881d      0x43a CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_macro   0x00018c57       0x6c CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_macro   0x00018cc3       0x22 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_macro   0x00018ce5      0x219 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+ .debug_macro   0x00018efe      0x307 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .debug_macro   0x00019205      0x219 CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+ .debug_macro   0x0001941e      0x219 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+ .debug_macro   0x00019637      0x31e CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_macro   0x00019955      0x20f CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_macro   0x00019b64      0x103 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00019c67       0x10 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00019c77      0x23c CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_macro   0x00019eb3      0x265 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a118       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a128       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a138       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a148       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a158       0x1c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a174       0x52 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a1c6       0x22 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a1e8       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a1f8       0x52 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a24a       0xcf CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a319       0x1c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a335       0x3d CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a372       0x35 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a3a7      0x12c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a4d3      0x242 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a715       0x1c CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a731       0x10 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a741      0x18a CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a8cb       0x16 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a8e1       0xce CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_macro   0x0001a9af      0x3a9 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_macro   0x0001ad58       0xda CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_macro   0x0001ae32      0x21d CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+ .debug_macro   0x0001b04f      0x257 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+ .debug_macro   0x0001b2a6      0x40a CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_line     0x00000000    0x200f2
+.debug_line     0x00000000    0x2010b
  .debug_line    0x00000000      0x69b cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_line    0x0000069b      0xd26 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_line    0x000013c1      0x9ce cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
@@ -8378,61 +8380,61 @@ LOAD linker stubs
  .debug_line    0x0001805d      0x694 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .debug_line    0x000186f1      0xad8 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_line    0x000191c9      0x664 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
- .debug_line    0x0001982d      0xe49 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_line    0x0001a676      0x693 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
- .debug_line    0x0001ad09      0x7f4 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .debug_line    0x0001b4fd      0x69f CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
- .debug_line    0x0001bb9c      0x719 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
- .debug_line    0x0001c2b5      0x8f0 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x0001cba5      0x626 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x0001d1cb      0x289 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_line    0x0001d454      0x5ad CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_line    0x0001da01       0x7a CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
- .debug_line    0x0001da7b      0x982 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_line    0x0001e3fd      0x68d CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
- .debug_line    0x0001ea8a      0x716 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
- .debug_line    0x0001f1a0      0xf52 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .debug_line    0x0001982d      0xe78 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_line    0x0001a6a5      0x693 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+ .debug_line    0x0001ad38      0x7f4 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .debug_line    0x0001b52c      0x69f CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+ .debug_line    0x0001bbcb      0x719 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+ .debug_line    0x0001c2e4      0x8f0 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x0001cbd4      0x626 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x0001d1fa      0x289 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x0001d483      0x5ad CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x0001da30       0x7a CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+ .debug_line    0x0001daaa      0x982 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_line    0x0001e42c      0x68d CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+ .debug_line    0x0001eab9      0x716 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+ .debug_line    0x0001f1cf      0xf3c CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_str      0x00000000    0xa4757
- .debug_str     0x00000000    0xa4757 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
+.debug_str      0x00000000    0xa4765
+ .debug_str     0x00000000    0xa4765 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
                               0x8e3ca (size before relaxing)
- .debug_str     0x000a4757    0x8e7fe cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_str     0x000a4757    0x8e552 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
- .debug_str     0x000a4757    0x8e545 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_str     0x000a4757    0x8e7d2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_str     0x000a4757    0x8eb60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_str     0x000a4757    0x8edf6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_str     0x000a4757    0x8f3db cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
- .debug_str     0x000a4757    0x8e827 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
- .debug_str     0x000a4757    0x8eac1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
- .debug_str     0x000a4757    0x8f742 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_str     0x000a4757    0x8ef4e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_str     0x000a4757    0x8edcd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_str     0x000a4757     0xa5ce cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_str     0x000a4757     0xc0be cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_str     0x000a4757     0xcecd cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_str     0x000a4757     0xc964 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_str     0x000a4757    0x98ba6 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_str     0x000a4757     0xaf10 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_str     0x000a4757     0xb30c cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_str     0x000a4757    0x976ef CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
- .debug_str     0x000a4757    0x8ea85 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
- .debug_str     0x000a4757    0x97d52 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_str     0x000a4757    0x8ebf1 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
- .debug_str     0x000a4757    0x915ab CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .debug_str     0x000a4757    0x8f06f CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
- .debug_str     0x000a4757    0x8ef71 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
- .debug_str     0x000a4757    0x9567f CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_str     0x000a4757    0x8e9a7 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_str     0x000a4757     0x711d CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_str     0x000a4757     0x9418 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_str     0x000a4757       0x8c CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
- .debug_str     0x000a4757    0x966bf CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_str     0x000a4757    0x8e543 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
- .debug_str     0x000a4757    0x8e8e3 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
- .debug_str     0x000a4757    0x96c9b CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .debug_str     0x000a4765    0x8e7fe cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x000a4765    0x8e552 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
+ .debug_str     0x000a4765    0x8e545 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x000a4765    0x8e7d2 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x000a4765    0x8eb60 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x000a4765    0x8edf6 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x000a4765    0x8f3db cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj
+ .debug_str     0x000a4765    0x8e827 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c.obj
+ .debug_str     0x000a4765    0x8eac1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c.obj
+ .debug_str     0x000a4765    0x8f742 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x000a4765    0x8ef4e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x000a4765    0x8edcd cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x000a4765     0xa5ce cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_str     0x000a4765     0xc0be cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_str     0x000a4765     0xcecd cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_str     0x000a4765     0xc964 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_str     0x000a4765    0x98ba6 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_str     0x000a4765     0xaf10 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_str     0x000a4765     0xb30c cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_str     0x000a4765    0x976ef CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
+ .debug_str     0x000a4765    0x8ea85 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
+ .debug_str     0x000a4765    0x97f7b CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_str     0x000a4765    0x8ebf1 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+ .debug_str     0x000a4765    0x915ab CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .debug_str     0x000a4765    0x8f06f CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+ .debug_str     0x000a4765    0x8ef71 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+ .debug_str     0x000a4765    0x9567f CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x000a4765    0x8e9a7 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x000a4765     0x711d CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x000a4765     0x9418 CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x000a4765       0x8c CMakeFiles/MiniProject.dir/startup_stm32f411xe.s.obj
+ .debug_str     0x000a4765    0x966bf CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_str     0x000a4765    0x8e543 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+ .debug_str     0x000a4765    0x8e8e3 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+ .debug_str     0x000a4765    0x96ca9 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
 
-.debug_frame    0x00000000     0x83cc
+.debug_frame    0x00000000     0x83f0
  .debug_frame   0x00000000       0x58 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj
  .debug_frame   0x00000058      0x1f4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
  .debug_frame   0x0000024c      0x118 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj
@@ -8455,66 +8457,66 @@ LOAD linker stubs
  .debug_frame   0x000066dc      0x1a8 cmake/stm32cubemx/CMakeFiles/FreeRTOS.dir/__/__/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
  .debug_frame   0x00006884      0x128 CMakeFiles/MiniProject.dir/Core/Src/main.c.obj
  .debug_frame   0x000069ac       0x34 CMakeFiles/MiniProject.dir/Core/Src/gpio.c.obj
- .debug_frame   0x000069e0       0xf8 CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
- .debug_frame   0x00006ad8       0x74 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
- .debug_frame   0x00006b4c       0xa4 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
- .debug_frame   0x00006bf0       0x7c CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
- .debug_frame   0x00006c6c       0x90 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
- .debug_frame   0x00006cfc      0x150 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_frame   0x00006e4c       0x34 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_frame   0x00006e80       0x34 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
- .debug_frame   0x00006eb4      0x2ac CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
- .debug_frame   0x00007160      0x128 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
- .debug_frame   0x00007288       0x54 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
- .debug_frame   0x000072dc       0xc8 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
- .debug_frame   0x000073a4      0x264 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
- .debug_frame   0x00007608       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
- .debug_frame   0x00007634       0x34 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
- .debug_frame   0x00007668       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-atoi.o)
- .debug_frame   0x00007698       0x64 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtol.o)
- .debug_frame   0x000076fc      0x144 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
- .debug_frame   0x00007840       0x34 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fwalk.o)
- .debug_frame   0x00007874       0x7c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-snprintf.o)
- .debug_frame   0x000078f0       0x74 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sprintf.o)
- .debug_frame   0x00007964       0x88 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
- .debug_frame   0x000079ec       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
- .debug_frame   0x00007a14       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00007a34       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strncmp.o)
- .debug_frame   0x00007a5c       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok.o)
- .debug_frame   0x00007a94       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok_r.o)
- .debug_frame   0x00007ad4       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strstr.o)
- .debug_frame   0x00007b00       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-closer.o)
- .debug_frame   0x00007b2c       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
- .debug_frame   0x00007b64       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lseekr.o)
- .debug_frame   0x00007b90       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-readr.o)
- .debug_frame   0x00007bbc       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-writer.o)
- .debug_frame   0x00007be8       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
- .debug_frame   0x00007c08       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
- .debug_frame   0x00007c34       0xb0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
- .debug_frame   0x00007ce4       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
- .debug_frame   0x00007d0c       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
- .debug_frame   0x00007d2c       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-assert.o)
- .debug_frame   0x00007d6c       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
- .debug_frame   0x00007da4       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
- .debug_frame   0x00007dd4       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
- .debug_frame   0x00007e24       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
- .debug_frame   0x00007e54       0x90 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
- .debug_frame   0x00007ee4       0x60 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
- .debug_frame   0x00007f44       0x5c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fflush.o)
- .debug_frame   0x00007fa0       0x64 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fprintf.o)
- .debug_frame   0x00008004       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
- .debug_frame   0x00008030       0x4c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memchr.o)
- .debug_frame   0x0000807c       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
- .debug_frame   0x000080a4       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reallocr.o)
- .debug_frame   0x000080e0       0xa8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
- .debug_frame   0x00008188       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wbuf.o)
- .debug_frame   0x000081c8       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wsetup.o)
- .debug_frame   0x000081f4       0xcc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
- .debug_frame   0x000082c0       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
- .debug_frame   0x000082fc       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-msizer.o)
- .debug_frame   0x0000831c       0x58 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-makebuf.o)
- .debug_frame   0x00008374       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fstatr.o)
- .debug_frame   0x000083a0       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-isattyr.o)
+ .debug_frame   0x000069e0      0x11c CMakeFiles/MiniProject.dir/Core/Src/freertos.c.obj
+ .debug_frame   0x00006afc       0x74 CMakeFiles/MiniProject.dir/Core/Src/i2c.c.obj
+ .debug_frame   0x00006b70       0xa4 CMakeFiles/MiniProject.dir/Core/Src/rtc.c.obj
+ .debug_frame   0x00006c14       0x7c CMakeFiles/MiniProject.dir/Core/Src/tim.c.obj
+ .debug_frame   0x00006c90       0x90 CMakeFiles/MiniProject.dir/Core/Src/usart.c.obj
+ .debug_frame   0x00006d20      0x150 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_frame   0x00006e70       0x34 CMakeFiles/MiniProject.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_frame   0x00006ea4       0x34 CMakeFiles/MiniProject.dir/Core/Src/sysmem.c.obj
+ .debug_frame   0x00006ed8      0x2ac CMakeFiles/MiniProject.dir/Core/Src/syscalls.c.obj
+ .debug_frame   0x00007184      0x128 CMakeFiles/MiniProject.dir/Core/Src/lcd.c.obj
+ .debug_frame   0x000072ac       0x54 CMakeFiles/MiniProject.dir/Core/Src/ir_decode.c.obj
+ .debug_frame   0x00007300       0xc8 CMakeFiles/MiniProject.dir/Core/Src/ds1302.c.obj
+ .debug_frame   0x000073c8      0x264 CMakeFiles/MiniProject.dir/Core/Src/ntptimer.c.obj
+ .debug_frame   0x0000762c       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00007658       0x34 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v7e-m+fp/hard\libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000768c       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-atoi.o)
+ .debug_frame   0x000076bc       0x64 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtol.o)
+ .debug_frame   0x00007720      0x144 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-findfp.o)
+ .debug_frame   0x00007864       0x34 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fwalk.o)
+ .debug_frame   0x00007898       0x7c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-snprintf.o)
+ .debug_frame   0x00007914       0x74 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sprintf.o)
+ .debug_frame   0x00007988       0x88 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-stdio.o)
+ .debug_frame   0x00007a10       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memmove.o)
+ .debug_frame   0x00007a38       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00007a58       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strncmp.o)
+ .debug_frame   0x00007a80       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok.o)
+ .debug_frame   0x00007ab8       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strtok_r.o)
+ .debug_frame   0x00007af8       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strstr.o)
+ .debug_frame   0x00007b24       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-closer.o)
+ .debug_frame   0x00007b50       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reent.o)
+ .debug_frame   0x00007b88       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lseekr.o)
+ .debug_frame   0x00007bb4       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-readr.o)
+ .debug_frame   0x00007be0       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-writer.o)
+ .debug_frame   0x00007c0c       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-errno.o)
+ .debug_frame   0x00007c2c       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-init.o)
+ .debug_frame   0x00007c58       0xb0 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-lock.o)
+ .debug_frame   0x00007d08       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_frame   0x00007d30       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-strlen.o)
+ .debug_frame   0x00007d50       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-assert.o)
+ .debug_frame   0x00007d90       0x38 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-freer.o)
+ .debug_frame   0x00007dc8       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-malloc.o)
+ .debug_frame   0x00007df8       0x50 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mallocr.o)
+ .debug_frame   0x00007e48       0x30 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-mlock.o)
+ .debug_frame   0x00007e78       0x90 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-svfprintf.o)
+ .debug_frame   0x00007f08       0x60 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf_i.o)
+ .debug_frame   0x00007f68       0x5c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fflush.o)
+ .debug_frame   0x00007fc4       0x64 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fprintf.o)
+ .debug_frame   0x00008028       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-sbrkr.o)
+ .debug_frame   0x00008054       0x4c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-memchr.o)
+ .debug_frame   0x000080a0       0x28 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-abort.o)
+ .debug_frame   0x000080c8       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-reallocr.o)
+ .debug_frame   0x00008104       0xa8 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-nano-vfprintf.o)
+ .debug_frame   0x000081ac       0x40 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wbuf.o)
+ .debug_frame   0x000081ec       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-wsetup.o)
+ .debug_frame   0x00008218       0xcc C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signal.o)
+ .debug_frame   0x000082e4       0x3c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-signalr.o)
+ .debug_frame   0x00008320       0x20 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-msizer.o)
+ .debug_frame   0x00008340       0x58 C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-makebuf.o)
+ .debug_frame   0x00008398       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-fstatr.o)
+ .debug_frame   0x000083c4       0x2c C:/PROGRA~2/ARMGNU~1/142BCE~1.3RE/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libg_nano.a(libc_a-isattyr.o)
 
 .debug_line_str
                 0x00000000      0x239

@@ -213,7 +213,7 @@ void StartTimeTask(void *argument)
   /* USER CODE BEGIN StartTimeTask */
     LCD_Init(&hi2c1);
     TickType_t xLastWakeTime = xTaskGetTickCount();
-	Debug_Print("StartTimeTask");
+	Debug_Print("StartTimeTask\r\n");
 
     RTC_TimeTypeDef sTime;
     RTC_DateTypeDef sDate;

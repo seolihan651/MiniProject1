@@ -33,6 +33,13 @@ typedef enum {
     NTP_COMPLETE
 } NTP_WiFiState_t;
 
+typedef enum {
+    NTP_THREAD_IDLE,
+    NTP_THREAD_RUNNING,
+    NTP_THREAD_SUCCESS,
+    NTP_THREAD_ERROR
+} NTP_ThreadState_t;
+
 typedef struct {
     uint8_t years;
     uint8_t months;
@@ -59,13 +66,22 @@ void NTP_GetCurrentTime(NTP_TimeData_t *time_data);
 void NTP_PrintTime(void);
 uint8_t NTP_IsTimeValid(void);
 void NTP_RequestTimeSync(void);
+NTP_ThreadState_t NTP_GetSyncThreadState(void);
+void NTP_StartSyncThread(void);
+void NTP_StopSyncThread(void);
+
+// 테스트 및 디버그 함수들
+void NTP_TestSyncOnce(void);
+void NTP_PrintThreadStatus(void);
 
 // 내부 함수들 (외부에서 직접 호출용)
 void NTP_ESP_ProcessResponse(void);
 void NTP_WiFi_StateMachine(void);
+void NTP_SyncThread_Task(void *argument);
 
 /* Exported variables --------------------------------------------------------*/
 extern osMutexId NTP_MutexHandle;
+extern osThreadId NTP_SyncThreadHandle;
 
 #ifdef __cplusplus
 }
